@@ -31,7 +31,7 @@ autoadb scrcpy -s '{}'
 cargo build --release
 ```
 
-It will generate the binary in `target/release/gnirhetet`.
+It will generate the binary in `target/release`.
 
 
 ## Cross-compile from Linux to Windows
