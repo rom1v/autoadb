@@ -39,7 +39,7 @@ impl AdbMonitorCallback for AutoAdb {
                 }
             })
             .collect::<Vec<_>>();
-        println!("Deteted device {}", serial);
+        println!("Detected device {}", serial);
         let process = Command::new(&cmd[0]).args(cmd.iter().skip(1)).spawn();
         if let Err(err) = process {
             eprintln!("Could not execute {:?}: {}", cmd, err);
