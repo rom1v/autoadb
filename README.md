@@ -55,6 +55,26 @@ Then build:
 It will generate `target/x86_64-pc-windows-gnu/release/autoadb.exe`.
 
 
+## For beginners - How to run AutoAdb:
+
+1) Install [Rust](https://www.rust-lang.org/tools/install).
+
+2) Build:
+
+```
+cargo build --release
+```
+
+It will generate the binary in `target/release/autoadb`
+
+
+3) Set the $PATH for autoadb or simply: 
+
+cd into autoadb/target/release/ and execute using ```./autoadb```
+
+e.g. to start scrcpy: ```./autoadb scrcpy -s '{}'```
+
+
 ## Licence
 
 This project reuses the mechanism I implemented in [gnirehtet] and expose it as
