@@ -53,8 +53,8 @@ impl ByteBuffer {
         self.head -= length;
         if self.head > 0 {
             // some data remaining, move them to the front of the buffer
+            let buf_ptr = self.buf.as_mut_ptr();
             unsafe {
-                let buf_ptr = self.buf.as_mut_ptr();
 
                 // Before:
                 //
